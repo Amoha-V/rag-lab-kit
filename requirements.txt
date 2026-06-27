@@ -1,0 +1,14 @@
+# RAG Lab dependencies (tested on Python 3.10–3.12).
+#
+# Preferred install (also gives you the `rag` command):
+#     pip install -e .
+#
+# Lightweight on purpose: embeddings use ChromaDB's built-in ONNX model
+# (onnxruntime), so there is NO PyTorch / sentence-transformers download.
+
+chromadb==0.5.23
+pypdf==5.1.0
+streamlit==1.41.1
+groq==0.13.0
+huggingface-hub==0.36.2
+matplotlib==3.10.0

@@ -1,0 +1,45 @@
+COMPUTER ENGINEERING DEPARTMENT — MANUAL (2026)
+
+This file is for PART 6 of the lab — "Swap the knowledge source".
+Copy it into the documents/ folder, delete college_handbook.txt, re-run
+ingest, and watch the chatbot's knowledge change WITHOUT retraining the LLM.
+
+1. DEPARTMENT OVERVIEW
+The Computer Engineering Department is located in Block C. The Head of
+Department (HOD) sits in Room 301. The department runs four computer
+laboratories: the Programming Lab, the Networking Lab, the Hardware Lab, and
+the Project Lab.
+
+2. LABORATORY TIMINGS
+All computer labs are open from 9:00 AM to 5:00 PM on working days. The Project
+Lab stays open until 7:00 PM for final-year students working on their projects.
+Students must enter their login time in the lab register and log out before
+leaving. Eating and drinking inside the labs is not allowed.
+
+3. PROGRAMMING SUBJECTS
+First-year students study C programming. Second-year students study Java and
+Data Structures. Third-year students study Python, Web Development, and a course
+on Databases. Each programming subject has a weekly three-hour practical.
+
+4. PROJECT REQUIREMENTS
+Every final-year student must complete a major project in a team of up to four
+members. The project proposal is due in August, the mid-review is in November,
+and the final demonstration is in April. Each team is assigned a faculty guide.
+A project report of at least forty pages must be submitted in printed and soft
+copy form.
+
+5. LAB EQUIPMENT
+The Hardware Lab contains forty desktop computers, networking switches, and
+microcontroller kits. Students must report any damaged equipment to the lab
+assistant immediately. Deliberate damage to equipment will be charged to the
+student responsible.
+
+6. INTERNSHIP
+Students are required to complete a six-week industrial internship after the
+fourth semester. The internship must be approved by the HOD in advance, and an
+internship report and certificate must be submitted within two weeks of
+returning to college.
+
+7. CONTACT
+The department office is in Room 302 and is open from 10:00 AM to 4:00 PM.
+Queries can be emailed to computer.dept@abcpolytechnic.edu.

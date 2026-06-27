@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag"
+version = "1.0.0"
+description = "A teaching kit: build a local College Document AI Assistant (RAG) with one command."
+readme = "README.md"
+# Upper bound is intentional: the pinned ML stack (tokenizers/torch) only has
+# prebuilt wheels for 3.10–3.12. On 3.13+ pip would try to compile from Rust
+# source and fail. This bound makes pip refuse early with a clear message.
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    # Embeddings use ChromaDB's built-in ONNX MiniLM (onnxruntime) — NO PyTorch.
+    "chromadb==0.5.23",
+    "pypdf==5.1.0",
+    "streamlit==1.41.1",
+    "groq==0.13.0",            # LLM backend: Groq (default)
+    "huggingface-hub==0.36.2", # LLM backend: Hugging Face (RAG_LLM=hf)
+    # Only needed for `rag map` (the 2D vector plot); PCA itself uses NumPy:
+    "matplotlib==3.10.0",
+]
+
+[project.scripts]
+# This is what makes everything abstracted: after install, participants
+# only ever type `rag <command>`. No scripts to open or run by hand.
+rag = "rag.cli:main"
+
+[tool.setuptools]
+packages = ["rag"]
